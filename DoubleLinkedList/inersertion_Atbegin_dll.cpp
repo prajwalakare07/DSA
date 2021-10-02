@@ -47,6 +47,7 @@ int main()
     Node *a = new Node(20);
     Node *b = new Node(30);
     Node *c = new Node(40);
+    Node *d = new Node(50);
 
     head->next = a;
     a->prev = head;
@@ -55,6 +56,8 @@ int main()
     b->prev = a;
     b->next =c;
     c->prev=b;
+    c->next=d;
+    d->prev=c;
 
     cout<<"Before Insertion: ";
     traverseForward(head);
