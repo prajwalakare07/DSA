@@ -39,7 +39,7 @@ void deleteAtmiddle(Node *temp)
     Node *node=slow->next;
     node->next->prev=slow;
     slow->next=node->next;
-    free(node);
+    delete(node);
 }
 int main(){
     Node *head=new Node(10);
