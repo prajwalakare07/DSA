@@ -1,0 +1,1 @@
+Node *  newnode=new Node(data)
