@@ -37,7 +37,7 @@ void deletionAtEnd(Node * head)
 
        lastNode->prev->next = NULL;
 
-       delete(lastNode);
+       free(lastNode);
 
 }
 
