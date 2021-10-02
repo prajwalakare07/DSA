@@ -33,7 +33,7 @@ void deleteAtbegin(Node *&head)
 
     head=head->next;
     head->prev=NULL;
-    delete(temp);
+    free(temp);
 }
 int main(){
     Node *head=new Node(10);
